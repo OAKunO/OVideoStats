@@ -1,0 +1,47 @@
+# 数据与凭据：永不入库
+data/*.db
+data/*.db-journal
+data/cache/
+data/credentials/
+# 浏览器用户目录 —— 里面存的就是登录态，等同于账号凭据
+data/browser/
+# 平台导出的原始文件，含自己的经营数据
+data/downloads/
+reports/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# 本地配置（含监控账号名单，可能涉及隐私）
+config.local.yaml
+
+# 系统
+.DS_Store
+
+# Local studio state and frontend build
+data/studio/
+ui/node_modules/
+dist/
+release/
+build/
+packaging/migration_source.txt
+packaging/*.spec
+packaging/*.icns
+packaging/*.iconset/
+
+# All runtime state and private diagnostics
+data/
+outputs/
+*.log
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.key
+*.pem
+.Spotlight-V100/

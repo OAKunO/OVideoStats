@@ -1,0 +1,183 @@
+/* OAnyImort's Palette and 400 ms ease-in-out; identical geometry in both modes. */
+@property --bg { syntax: '<color>'; inherits: true; initial-value: #f8f5ef; }
+@property --sidebar { syntax: '<color>'; inherits: true; initial-value: #f0ebe2; }
+@property --panel { syntax: '<color>'; inherits: true; initial-value: #fffdfa; }
+@property --text { syntax: '<color>'; inherits: true; initial-value: #3b362f; }
+@property --muted { syntax: '<color>'; inherits: true; initial-value: #847b6f; }
+@property --dim { syntax: '<color>'; inherits: true; initial-value: #a49b8f; }
+@property --line { syntax: '<color>'; inherits: true; initial-value: #e8e1d6; }
+@property --selected { syntax: '<color>'; inherits: true; initial-value: #f3ede2; }
+@property --accent { syntax: '<color>'; inherits: true; initial-value: #806a50; }
+@property --button { syntax: '<color>'; inherits: true; initial-value: #494339; }
+@property --on-button { syntax: '<color>'; inherits: true; initial-value: #fff9ef; }
+@property --success { syntax: '<color>'; inherits: true; initial-value: #54765a; }
+@property --danger { syntax: '<color>'; inherits: true; initial-value: #a3534d; }
+@property --warning { syntax: '<color>'; inherits: true; initial-value: #94733f; }
+:root {
+  --bg: #f8f5ef; --sidebar: #f0ebe2; --panel: #fffdfa;
+  --text: #3b362f; --muted: #847b6f; --dim: #a49b8f;
+  --line: #e8e1d6; --selected: #f3ede2; --accent: #806a50;
+  --button: #494339; --on-button: #fff9ef;
+  --success: #54765a; --danger: #a3534d; --warning: #94733f;
+  --native-inset: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'OVideoStats Sans', sans-serif;
+  color-scheme: light; color: var(--text); background: var(--bg);
+}
+:root[data-theme='dark'] {
+  --bg: #201f1d; --sidebar: #262522; --panel: #2b2a27;
+  --text: #eee9df; --muted: #b3ada2; --dim: #827c73;
+  --line: #413e38; --selected: #39352f; --accent: #d3c1a7;
+  --button: #e5dac7; --on-button: #292720;
+  --success: #a9b99a; --danger: #db9c91; --warning: #d0b480;
+  color-scheme: dark;
+}
+:root[data-desktop='macos'] { --native-inset: 28px; }
+/* Inherited tokens animate once. Children and the transparent window top share that timeline. */
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-theme-transition] {
+    transition-property: --bg, --sidebar, --panel, --text, --muted, --dim, --line, --selected, --accent, --button, --on-button, --success, --danger, --warning;
+    transition-duration: .4s; transition-timing-function: ease-in-out;
+  }
+}
+:root ::selection { background: var(--selected); color: var(--text); }
+:root .studio { background: var(--bg); }
+:root .sidebar { background: var(--sidebar); border-color: var(--line); padding-top: calc(24px + var(--native-inset)); }
+:root .side-brand { padding-bottom: 28px; }
+:root .side-brand strong { font-size: 13px; line-height: 1.2; letter-spacing: -.035em; white-space: nowrap; }
+:root .app-brand-icon { display: block; width: 34px; height: 34px; flex: none; object-fit: contain; border-radius: 8px; }
+:root .brand-dot, :root .title-dot, :root .modal h2 span { color: var(--accent); }
+:root .side-brand small, :root .side-label, :root .side-label span, :root .platform-nav small { color: var(--muted); }
+:root .nav-item, :root .platform-nav { color: var(--muted); border-radius: 10px; }
+:root .nav-item.active { color: var(--text); background: var(--selected); }
+:root .nav-item:hover { color: var(--text); background: var(--panel); }
+:root .nav-glyph, :root .nav-item svg, :root .nav-count { color: var(--accent); }
+:root .sidebar-bottom { border-color: var(--line); }
+:root .sidebar-status, :root .local-pill { color: var(--muted); }
+:root .sidebar-bottom p, :root .top-date { color: var(--dim); }
+:root .topbar { height: calc(64px + var(--native-inset)); padding: var(--native-inset) 28px 0; color: var(--muted); background: var(--bg); border: 0; }
+:root .breadcrumbs span { color: var(--dim); }
+:root .appearance-picker { display: flex; align-items: center; gap: 2px; padding: 4px; border-radius: 999px; background: var(--sidebar); letter-spacing: normal; }
+:root .appearance-option { display: grid; place-items: center; width: 29px; height: 25px; padding: 0; border: 0; border-radius: 999px; color: var(--muted); background: transparent; }
+:root .appearance-option[aria-pressed='true'] { color: var(--text); background: var(--panel); }
+:root .appearance-option:hover { color: var(--text); }
+:root .appearance-option:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+:root .content { padding: 12px 28px 26px; gap: 24px; }
+:root .section-head h1, :root .activity-intro h1 { font-size: 28px; letter-spacing: -.035em; font-weight: 600; margin-bottom: 9px; }
+:root .section-index, :root .modal-kicker { color: var(--muted); }
+:root .section-head p, :root .activity-intro p { color: var(--muted); font-size: 11px; }
+:root .section-head p span { color: var(--dim); }
+:root .workspace-columns { gap: 20px; }
+:root .accounts-panel, :root .destination-panel { border-radius: 20px; padding: 20px; min-height: 340px; border-color: var(--line); background: var(--panel); box-shadow: none; }
+:root .panel-title { margin-bottom: 20px; }
+:root .panel-title h2 { font-size: 17px; }
+:root .panel-title h2 span, :root .panel-caption, :root .account-sort-label { color: var(--muted); }
+:root .account-sort-label select, :root .sort-direction { border-radius: 8px; height: 30px; color: var(--text); background: var(--selected); border-color: var(--line); color-scheme: inherit; }
+:root .sort-direction:hover { background: var(--sidebar); border-color: var(--accent); }
+:root .account-list { gap: 9px; max-height: calc(100dvh - 250px - var(--native-inset)); scrollbar-color: var(--line) transparent; }
+:root .account-row { height: 64px; border-radius: 12px; color: var(--text); background: var(--bg); border-color: var(--line); }
+:root .account-row:hover { background: var(--selected); border-color: var(--accent); }
+:root .account-settings { border-radius: 12px; }
+:root .account-settings > svg, :root .account-row > svg { color: var(--muted); }
+:root .account-main strong { font-size: 13px; }
+:root .account-main small { margin-top: 3px; color: var(--muted); }
+:root .account-export, :root .account-empty { color: var(--dim); }
+:root .brand-icon { background: var(--selected); }
+:root .account-avatar-image { background: var(--selected); border-color: var(--line); }
+:root .account-avatar-platform { background: var(--panel); box-shadow: 0 1px 3px #0002; }
+:root .account-state { color: var(--success); }
+:root .status-dot, :root .pulse { background: var(--success); box-shadow: none; }
+:root .expired-status { color: var(--danger); }
+:root .expired-status .status-dot { background: var(--danger); }
+:root .unchecked-status, :root .pending-status { color: var(--warning); }
+:root .unchecked-status .status-dot, :root .pending-status .status-dot { background: var(--warning); }
+:root .primary-btn, :root .text-btn, :root .secondary-btn, :root .danger-btn { border-radius: 10px; height: 36px; }
+:root .primary-btn, :root .modal-action { color: var(--on-button); background: var(--button); border-color: var(--button); }
+:root .primary-btn:hover, :root .modal-action:hover { background: color-mix(in srgb, var(--button), var(--accent) 18%); }
+:root .text-btn, :root .secondary-btn { color: var(--text); background: var(--selected); border-color: var(--line); }
+:root .text-btn:hover, :root .secondary-btn:hover { background: var(--sidebar); border-color: var(--accent); }
+:root .danger-btn { color: var(--danger); background: color-mix(in srgb, var(--danger) 10%, var(--panel)); border-color: color-mix(in srgb, var(--danger) 40%, var(--line)); }
+:root .danger-btn:hover { background: color-mix(in srgb, var(--danger) 18%, var(--panel)); }
+:root .destination-emblem { border-radius: 9px; color: var(--accent); border-color: var(--line); }
+:root .destination-description, :root .destination-panel > label { color: var(--muted); line-height: 1.7; }
+:root .folder-input { border-radius: 10px; color: var(--text); background: var(--bg); border: 1px solid var(--line); }
+:root .folder-input input { color: var(--text); }
+:root .folder-input input::placeholder { color: var(--dim); }
+:root .destination-change { border-radius: 10px; color: var(--text); background: var(--selected); border-color: var(--line); }
+:root .destination-change:hover { background: var(--sidebar); }
+:root .destination-panel .export-button { border-radius: 10px; color: var(--on-button); background: var(--button); border-color: var(--button); box-shadow: none; }
+:root .destination-panel .export-button:not(:disabled):hover { background: color-mix(in srgb, var(--button), var(--accent) 18%); box-shadow: none; }
+:root .export-button-icon { color: var(--on-button); background: color-mix(in srgb, var(--on-button) 12%, transparent); }
+:root .destination-panel .export-button:disabled { color: var(--muted); background: var(--selected); border-color: var(--line); box-shadow: none; }
+:root .destination-panel .export-button:disabled .export-button-icon { color: var(--muted); background: transparent; }
+:root .destination-panel .export-hint { color: var(--muted); }
+:root .destination-panel .export-hint.needs-folder { color: var(--warning); }
+:root .selection-box { appearance: none; width: 16px; height: 16px; border: 1px solid var(--dim); border-radius: 4px; color-scheme: inherit; background: transparent; }
+:root .selection-box:checked, :root .selection-box:indeterminate { background-color: var(--accent); border-color: var(--accent); background-position: center; background-repeat: no-repeat; background-size: 12px; }
+:root .selection-box:checked { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='%23fffdfa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+:root .selection-box:indeterminate { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8h8' fill='none' stroke='%23fffdfa' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+:root[data-theme='dark'] .selection-box:checked { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='%232b2a27' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+:root[data-theme='dark'] .selection-box:indeterminate { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8h8' fill='none' stroke='%232b2a27' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+:root .selection-box:focus-visible, :root .account-settings:focus-visible, :root .account-sort-label select:focus-visible, :root .sort-direction:focus-visible, :root .destination-panel .export-button:focus-visible { outline-color: var(--accent); }
+:root .activity-intro { border-color: var(--line); }
+:root .result-item { border-radius: 11px; background: var(--panel); border-color: var(--line); }
+:root .result-item p, :root .empty-activity { color: var(--muted); }
+:root .result-icon, :root .result-state { color: var(--success); }
+:root .result-item.failure .result-icon, :root .result-item.failure .result-state { color: var(--danger); }
+:root .empty-activity button { color: var(--accent); }
+:root .modal-backdrop { background: #0005; }
+/* Avoid a full-window backdrop compositing pass in Windows WebView2. */
+:root[data-desktop='windows'] .modal-backdrop { backdrop-filter: none; -webkit-backdrop-filter: none; }
+:root .modal { border-radius: 22px; padding: 26px; color: var(--text); background: var(--panel); border-color: var(--line); box-shadow: 0 25px 80px #0003; }
+:root .modal-close { border-radius: 50%; color: var(--muted); border-color: var(--line); }
+:root .modal-close:hover { background: var(--selected); }
+:root .modal-intro, :root .platform-option small, :root .settings-identity p, :root .settings-label p, :root .visibility-setting p, :root .confirm-modal p { color: var(--muted); }
+:root .login-browser-info { margin-top: 12px; padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+:root .login-browser-info strong { font-size: 11px; font-weight: 600; }
+:root .login-browser-info p { margin: 5px 0; font-size: 10px; line-height: 1.6; color: var(--muted); }
+:root .login-browser-info small { font-size: 9px; line-height: 1.5; color: var(--dim); }
+:root .platform-option { border-radius: 11px; color: var(--text); background: var(--bg); border-color: var(--line); }
+:root .platform-option.chosen { background: var(--selected); border-color: var(--accent); }
+:root .option-check, :root .settings-label > span { color: var(--accent); }
+:root .modal-tip { border-radius: 11px; color: var(--warning); background: var(--selected); }
+:root .settings-divider { background: var(--line); }
+:root .field-check { border-radius: 7px; color: var(--muted); border-color: var(--line); }
+:root .field-check.checked { color: var(--text); background: var(--selected); border-color: var(--accent); }
+:root .field-check .box { border-color: var(--accent); }
+:root .field-check.checked .box { color: var(--panel); background: var(--accent); border-color: var(--accent); }
+:root .field-check small { color: var(--danger); }
+:root .visibility-setting { border-color: var(--line); }
+:root .switch { background: var(--line); }
+:root .switch span { background: var(--panel); }
+:root .switch.on { background: var(--accent); }
+:root .modal-action { border-radius: 10px; height: 40px; }
+:root .job-toast { border-radius: 12px; color: var(--text); background: var(--panel); border-color: var(--line); box-shadow: 0 12px 35px #0002; }
+:root .job-toast p { color: var(--muted); }
+:root .job-spinner { border-color: var(--line); border-top-color: var(--accent); }
+:root .notice { border-radius: 12px; color: var(--danger); background: var(--panel); border-color: var(--danger); box-shadow: 0 12px 35px #0002; }
+:root .notice button { color: var(--danger); }
+:root .export-progress-panel { color: var(--text); background: var(--panel); border-color: var(--line); box-shadow: 0 -12px 30px #0002; }
+:root .export-progress-top p { color: var(--muted); }
+:root .export-progress-top > span { color: var(--accent); }
+:root .export-progress-track { background: var(--selected); }
+:root .export-progress-fill { background: var(--accent); box-shadow: none; }
+:root .export-progress-scan { background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--panel) 30%, transparent), transparent); }
+.login-results-modal { width: min(680px, 100%); }
+.login-check-list { max-height: min(440px, 55vh); overflow-y: auto; margin-top: 14px; }
+.login-check-item { display: flex; align-items: flex-start; gap: 10px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.login-check-detail { flex: 1; min-width: 0; }
+.login-check-detail strong { font-size: 12px; overflow-wrap: anywhere; }
+.login-check-detail small { display: block; margin-top: 4px; color: var(--dim); font-size: 10px; }
+.login-check-detail p { margin: 6px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; overflow-wrap: anywhere; }
+.login-check-status { flex: none; font-size: 11px; }
+.login-check-status.status-connected { color: var(--success); }
+.login-check-status.status-expired, .login-check-status.status-mismatch { color: var(--danger); }
+.login-check-status.status-error { color: var(--warning); }
+@media(max-width:800px) {
+  :root .content { padding: 12px 18px 18px; gap: 18px; }
+  :root .topbar { padding-right: 18px; padding-left: 18px; }
+  :root .sidebar { padding-top: calc(15px + var(--native-inset)); }
+}
+@media(max-width:700px) {
+  :root .account-list { max-height: none; }
+  :root .accounts-panel, :root .destination-panel { min-height: 0; }
+}

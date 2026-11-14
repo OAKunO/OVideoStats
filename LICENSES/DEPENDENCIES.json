@@ -1,0 +1,433 @@
+[
+  {
+    "platform": "macos-build-environment",
+    "name": "altgraph",
+    "version": "0.17.5",
+    "license_files": [
+      "macos/altgraph-0.17.5/altgraph-0.17.5.dist-info/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "bottle",
+    "version": "0.13.4",
+    "license_files": [
+      "macos/bottle-0.13.4/bottle-0.13.4.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "et_xmlfile",
+    "version": "2.0.0",
+    "license_files": [
+      "macos/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/AUTHORS.txt",
+      "macos/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/LICENCE.python",
+      "macos/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/LICENCE.rst"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "greenlet",
+    "version": "3.2.5",
+    "license_files": [
+      "macos/greenlet-3.2.5/greenlet-3.2.5.dist-info/licenses/LICENSE",
+      "macos/greenlet-3.2.5/greenlet-3.2.5.dist-info/licenses/LICENSE.PSF"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "importlib_metadata",
+    "version": "8.7.1",
+    "license_files": [
+      "macos/importlib_metadata-8.7.1/importlib_metadata-8.7.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "macholib",
+    "version": "1.16.4",
+    "license_files": [
+      "macos/macholib-1.16.4/macholib-1.16.4.dist-info/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "numpy",
+    "version": "2.0.2",
+    "license_files": [
+      "macos/numpy-2.0.2/numpy-2.0.2.dist-info/LICENSE.txt",
+      "macos/numpy-2.0.2/numpy/_core/include/numpy/random/LICENSE.txt",
+      "macos/numpy-2.0.2/numpy/ma/LICENSE",
+      "macos/numpy-2.0.2/numpy/random/LICENSE.md"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "openpyxl",
+    "version": "3.1.5",
+    "license_files": [
+      "macos/openpyxl-3.1.5/openpyxl-3.1.5.dist-info/LICENCE.rst"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "packaging",
+    "version": "26.3",
+    "license_files": [
+      "macos/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE",
+      "macos/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "macos/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.BSD"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pillow",
+    "version": "11.3.0",
+    "license_files": [
+      "macos/pillow-11.3.0/pillow-11.3.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pip",
+    "version": "26.0.1",
+    "license_files": [
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/AUTHORS.txt",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/LICENSE.txt",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/dependency_groups/LICENSE.txt",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+      "macos/pip-26.0.1/pip-26.0.1.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+      "macos/pip-26.0.1/pip/_vendor/cachecontrol/LICENSE.txt",
+      "macos/pip-26.0.1/pip/_vendor/certifi/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/dependency_groups/LICENSE.txt",
+      "macos/pip-26.0.1/pip/_vendor/distlib/LICENSE.txt",
+      "macos/pip-26.0.1/pip/_vendor/distro/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/idna/LICENSE.md",
+      "macos/pip-26.0.1/pip/_vendor/msgpack/COPYING",
+      "macos/pip-26.0.1/pip/_vendor/packaging/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/packaging/LICENSE.APACHE",
+      "macos/pip-26.0.1/pip/_vendor/packaging/LICENSE.BSD",
+      "macos/pip-26.0.1/pip/_vendor/pkg_resources/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/platformdirs/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/pygments/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/pyproject_hooks/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/requests/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/resolvelib/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/rich/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/tomli/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/tomli_w/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/truststore/LICENSE",
+      "macos/pip-26.0.1/pip/_vendor/urllib3/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "playwright",
+    "version": "1.60.0",
+    "license_files": [
+      "macos/playwright-1.60.0/playwright-1.60.0.dist-info/licenses/LICENSE",
+      "macos/playwright-1.60.0/playwright/driver/LICENSE",
+      "macos/playwright-1.60.0/playwright/driver/package/LICENSE",
+      "macos/playwright-1.60.0/playwright/driver/package/NOTICE",
+      "macos/playwright-1.60.0/playwright/driver/package/ThirdPartyNotices.txt",
+      "macos/playwright-1.60.0/playwright/driver/package/lib/serverRegistry.js.LICENSE",
+      "macos/playwright-1.60.0/playwright/driver/package/lib/utilsBundle.js.LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "proxy_tools",
+    "version": "0.1.0",
+    "license_files": [
+      "proxy_tools/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyee",
+    "version": "13.0.1",
+    "license_files": [
+      "macos/pyee-13.0.1/pyee-13.0.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyinstaller",
+    "version": "6.22.3",
+    "license_files": [
+      "macos/pyinstaller-6.22.3/pyinstaller-6.22.3.dist-info/licenses/COPYING.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyinstaller-hooks-contrib",
+    "version": "2026.7",
+    "license_files": [
+      "macos/pyinstaller-hooks-contrib-2026.7/pyinstaller_hooks_contrib-2026.7.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyobjc-core",
+    "version": "11.1",
+    "license_files": [
+      "pyobjc-core/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyobjc-framework-Cocoa",
+    "version": "11.1",
+    "license_files": [
+      "macos/pyobjc-framework-Cocoa-11.1/pyobjc_framework_cocoa-11.1.dist-info/licenses/LICENSE.txt",
+      "pyobjc-core/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyobjc-framework-Quartz",
+    "version": "11.1",
+    "license_files": [
+      "macos/pyobjc-framework-Quartz-11.1/pyobjc_framework_quartz-11.1.dist-info/licenses/LICENSE.txt",
+      "pyobjc-core/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyobjc-framework-Security",
+    "version": "11.1",
+    "license_files": [
+      "pyobjc-core/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyobjc-framework-UniformTypeIdentifiers",
+    "version": "11.1",
+    "license_files": [
+      "pyobjc-core/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pyobjc-framework-WebKit",
+    "version": "11.1",
+    "license_files": [
+      "macos/pyobjc-framework-WebKit-11.1/pyobjc_framework_webkit-11.1.dist-info/licenses/LICENSE.txt",
+      "pyobjc-core/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "pywebview",
+    "version": "6.2.1",
+    "license_files": [
+      "macos/pywebview-6.2.1/pywebview-6.2.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "qrcode",
+    "version": "8.2",
+    "license_files": [
+      "macos/qrcode-8.2/qrcode-8.2.dist-info/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "setuptools",
+    "version": "58.0.4",
+    "license_files": [
+      "macos/setuptools-58.0.4/setuptools-58.0.4.dist-info/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license_files": [
+      "macos/typing_extensions-4.16.0/typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "macos-build-environment",
+    "name": "zipp",
+    "version": "3.23.1",
+    "license_files": [
+      "macos/zipp-3.23.1/zipp-3.23.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "bottle",
+    "version": "0.13.4",
+    "license_files": [
+      "windows/bottle-0.13.4/bottle-0.13.4.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "cffi",
+    "version": "2.1.1",
+    "license_files": [
+      "windows/cffi-2.1.1/cffi-2.1.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "clr_loader",
+    "version": "0.3.1",
+    "license_files": [
+      "windows/clr_loader-0.3.1/clr_loader-0.3.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "et_xmlfile",
+    "version": "2.0.0",
+    "license_files": [
+      "windows/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/AUTHORS.txt",
+      "windows/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/LICENCE.python",
+      "windows/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/LICENCE.rst"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "greenlet",
+    "version": "3.5.6",
+    "license_files": [
+      "windows/greenlet-3.5.6/greenlet-3.5.6.dist-info/licenses/LICENSE",
+      "windows/greenlet-3.5.6/greenlet-3.5.6.dist-info/licenses/LICENSE.PSF"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "openpyxl",
+    "version": "3.1.5",
+    "license_files": [
+      "windows/openpyxl-3.1.5/openpyxl-3.1.5.dist-info/LICENCE.rst"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "pillow",
+    "version": "11.3.0",
+    "license_files": [
+      "windows/pillow-11.3.0/pillow-11.3.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "playwright",
+    "version": "1.65.1",
+    "license_files": [
+      "windows/playwright-1.65.1/playwright/driver/LICENSE",
+      "windows/playwright-1.65.1/playwright/driver/package/LICENSE",
+      "windows/playwright-1.65.1/playwright/driver/package/NOTICE",
+      "windows/playwright-1.65.1/playwright/driver/package/ThirdPartyNotices.txt",
+      "windows/playwright-1.65.1/playwright/driver/package/lib/serverRegistry.js.LICENSE",
+      "windows/playwright-1.65.1/playwright/driver/package/lib/utilsBundle.js.LICENSE",
+      "windows/playwright-1.65.1/playwright/driver/package/lib/webp_codec.LICENSE",
+      "windows/playwright-1.65.1/playwright-1.65.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "proxy_tools",
+    "version": "0.1.0",
+    "license_files": [
+      "proxy_tools/LICENSE.txt"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "pycparser",
+    "version": "3.12",
+    "license_files": [
+      "windows/pycparser-3.12/pycparser-3.12.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "pythonnet",
+    "version": "3.2.1",
+    "license_files": [
+      "windows/pythonnet-3.2.1/pythonnet-3.2.1.dist-info/licenses/AUTHORS.md",
+      "windows/pythonnet-3.2.1/pythonnet-3.2.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "pywebview",
+    "version": "6.2.1",
+    "license_files": [
+      "windows/pywebview-6.2.1/pywebview-6.2.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "windows-runtime",
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license_files": [
+      "windows/typing_extensions-4.16.0/typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "platform": "frontend",
+    "name": "react",
+    "version": "18.3.1",
+    "license_files": [
+      "frontend/react/LICENSE"
+    ]
+  },
+  {
+    "platform": "frontend",
+    "name": "react-dom",
+    "version": "18.3.1",
+    "license_files": [
+      "frontend/react-dom/LICENSE"
+    ]
+  },
+  {
+    "platform": "frontend",
+    "name": "scheduler",
+    "version": "0.23.2",
+    "license_files": [
+      "frontend/scheduler/LICENSE"
+    ]
+  },
+  {
+    "platform": "frontend",
+    "name": "loose-envify",
+    "version": "1.4.0",
+    "license_files": [
+      "frontend/loose-envify/LICENSE"
+    ]
+  },
+  {
+    "platform": "frontend",
+    "name": "js-tokens",
+    "version": "4.0.0",
+    "license_files": [
+      "frontend/js-tokens/LICENSE"
+    ]
+  }
+]
