@@ -1,0 +1,34 @@
+name: Publish verified release assets
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/publish-release-assets.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Download public v0.1.4 artifacts and verify checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          cd artifacts
+          base=https://oakuno.com/downloads/ovideostats/v0.1.4
+          curl --fail --location --retry 120 --retry-delay 5 --retry-all-errors --connect-timeout 15 --max-time 600 "$base/SHA256SUMS.txt" -o SHA256SUMS.txt
+          for name in OVideoStats-macOS-0.1.4-arm64.zip OVideoStats-Setup-0.1.4-x64.exe OVideoStats-source-0.1.4.zip; do
+            curl --fail --location --retry 8 --retry-all-errors --connect-timeout 15 --max-time 600 "$base/$name" -o "$name"
+          done
+          sha256sum --check SHA256SUMS.txt
+      - name: Upload verified artifacts to the existing v0.1.4 release
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release upload v0.1.4 artifacts/OVideoStats-macOS-0.1.4-arm64.zip artifacts/OVideoStats-Setup-0.1.4-x64.exe artifacts/OVideoStats-source-0.1.4.zip artifacts/SHA256SUMS.txt --clobber
+          gh api repos/${GH_REPO}/releases/tags/v0.1.4 --jq '.assets[] | [.name, .state, .size, .digest] | @tsv'
